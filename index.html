@@ -1,25 +1,174 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Firefox Relay</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <link rel="shortcut icon" href="https://www.mozilla.org/media/img/favicons/mozilla/favicon.d25d81d39065.ico">
-    <link rel="stylesheet" href="assets/fonts.css">
-    <link rel="stylesheet" href="assets/styles.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link
+      rel="shortcut icon"
+      href="https://www.mozilla.org/media/img/favicons/mozilla/favicon.d25d81d39065.ico"
+    />
+    <link rel="stylesheet" href="assets/fonts.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Put HTML Here -->
-    
-    <!-- 
+    <main>
+      <nav class="navbar">
+        <div class="logo">
+          <img class="logo-img" src="assets/img/logo-relay.png" />
+        </div>
+        <a href="#" class="icon-link-mobile">
+          <i class="fas fa-th fa-2x"></i>
+        </a>
+        <div class="dot-mobile"></div>
+        <div class="toggle-menu-mobile">
+          <a href="#" class="toggle-button font-metropolis">
+            Menu
+            <i
+              class="fas fa-chevron-up fa-fw"
+              style="color: grey; margin-left: 5px"
+            ></i>
+          </a>
+          <a href="#" class="toggle-button-hidden font-metropolis">
+            Menu
+            <i
+              class="fas fa-chevron-down fa-fw"
+              style="color: grey; margin-left: 5px"
+            ></i>
+          </a>
+        </div>
+        <div class="menu-padding"></div>
+        <div class="navbar-links">
+          <ul>
+            <li>
+              <div class="colored-bullet">
+                <div id="colored-dot" class="dot"></div>
+                <a href="#" id="underlined-home" class="font-metropolis"
+                  >Home</a
+                >
+              </div>
+            </li>
+            <li><a href="#" class="font-metropolis">FAQ</a></li>
+            <li>
+              <a href="#" id="icon-link"> <i class="fas fa-th fa-2x"></i> </a>
+            </li>
+            <li id="icon-link">
+              <div class="dot"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content-div">
+        <div class="content-1">
+          <h2 class="header font-metropolis">Manage your Relay aliases</h2>
+          <h4 class="remaining font-metropolis"><b>4</b> remaining aliases</h4>
+        </div>
+        <div id="line"></div>
+        <div id="btn-generate-mobile">
+          <button class="btn-generate">
+            <i class="fa fa-plus fa-fw"></i>Generate New Alias
+          </button>
+        </div>
+        <div id="remaining-text-mobile">
+          <h4 class="remaining-mobile font-metropolis">
+            <b>4 </b> remaining aliases
+          </h4>
+        </div>
+        <div class="content-2">
+          <h4 class="account-name font-metropolis">
+            Add Account name <i class="fa fa-pencil fa-fw"></i>
+          </h4>
+          <div class="btn-forwarding">
+            <h5 class="forwarding font-metropolis">forwarding</h5>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <div class="content-3">
+              <div class="show-details-content">
+                <h4 class="email-1 font-metropolis">
+                  sw4wo4v1s@relay.firefox.com
+                  <i class="far fa-copy fa-fw" style="color: grey"></i>
+                </h4>
+                <a href="#" class="content-button font-metropolis">
+                  Show Details
+                  <i class="fas fa-chevron-down fa-fw" style="color: grey"></i>
+                </a>
+                <a href="#" class="content-button-hidden font-metropolis">
+                  Hide Details
+                  <i class="fas fa-chevron-up fa-fw" style="color: grey"></i>
+                </a>
+              </div>
+              <div class="number-display">
+                <div class="zero-blocked">
+                  <h3 class="number-1 font-metropolis"><b>0</b></h3>
+                  <h5 class="text-1 font-metropolis">Blocked</h5>
+                </div>
+                <div class="zero-forward">
+                  <h3 class="number-2 font-metropolis"><b>0</b></h3>
+                  <h5 class="text-2 font-metropolis">Forwarded</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details-div">
+            <div class="zero-blocked-mobile">
+              <h5 class="text-1 font-metropolis">Blocked</h5>
+              <h3 class="number-1 font-metropolis"><b>0</b></h3>
+            </div>
+            <div class="zero-forward-mobile">
+              <h5 class="text-2 font-metropolis">Forwarded</h5>
+              <h3 class="number-2 font-metropolis"><b>0</b></h3>
+            </div>
+            <div class="btn-forwarding">
+              <div class="created-block">
+                <h4 class="title font-metropolis">Created:</h4>
+                <h4 class="text-3 font-metropolis">May 10, 2021</h4>
+              </div>
+              <div class="forward-block">
+                <h4 class="title font-metropolis">Forward emails to</h4>
+                <h4 class="text-4 font-metropolis">mcrawford@mozilla.com</h4>
+              </div>
+            </div>
+            <button class="btn-delete">Delete</button>
+          </div>
+        </div>
+        <h4 class="last-text font-metropolis">
+          Firefox Relay supports email forwarding (including attachments) of
+          email upto 150KB in size
+        </h4>
+        <footer class="footer">
+          <div>
+            <img class="logo-footer" src="assets/img/logo-mozilla.svg" />
+          </div>
+          <div class="footer-container">
+            <ul>
+              <li><a href="#" class="font-metropolis">Privacy</a></li>
+              <li><a href="#" class="font-metropolis">Relay Terms</a></li>
+              <li><a href="#" class="font-metropolis">Legal</a></li>
+              <li>
+                <a href="#"> <i class="fa fa-github fa-lg fa-fw"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <!--
         Font Awesome v5 Free - See https://fontawesome.com/start for more info
         Example usage: <i class="fas fa-toggle-off"></i>
      -->
-    <script src="https://kit.fontawesome.com/4c55e184d1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4c55e184d1.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/app.js"></script>
-</body>
-
+  </body>
 </html>
